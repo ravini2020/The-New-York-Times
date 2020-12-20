@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contact Us</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <header id="header">
+            <div>
+                <h1>The New York Times</h1>
+            </div>
+        </header>
+        
+         <section class="topnav">
+            <a class="topnavLeft" href="index.html">Home</a>
+            <a class="topnavLeft" href="login.html">Login</a>
+            <a class="topnavLeft" href="register.html">Register</a>
+            <a class="topnavRight" href="aboutUs.html">About Us</a>
+            <a class="topnavRightActive" href="contactUs.html">Contact Us</a>
+        </section>
+        
+        <div class="container">
+            <div class="head">
+                <h2><a class="headingButton" href="contactUs.html">Contact us</a></h2>
+            </div>
+
+            <form class="form" action="ContactUsServlet" Method="GET">
+
+                <input type="hidden" name="command" value="Contact"/>
+
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter Name" name="name" required><br>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Enter Email" name="email" required><br>
+                </div>
+                <br>
+                <div>
+                    <label for="description">Message</label>
+                    <textarea name="description" id="actions" placeholder="Describe your problem"></textarea><br><br>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="submitMessageButton">SEND</button>
+                </div>
+
+            </form>
+<p class="ref"><a class="aRef" href="index.html">Home</a></p>
+        </div>
+    </body>
+</html>

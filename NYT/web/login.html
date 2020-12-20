@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+    </head>
+    <body>
+        <header id="header">
+            <div>
+                <h1>The New York Times</h1>
+            </div>
+        </header>
+        
+        <div class="topnav">
+            <a class="topnavLeft" href="index.html">Home</a>
+            <a class="topnavLeftActive" href="login.html">Login</a>
+            <a class="topnavLeft" href="register.html">Register</a>
+            <a class="topnavRight" href="aboutUs.html">About Us</a>
+            <a class="topnavRight" href="contactUs.html">Contact Us</a>
+        </div>
+        
+        <div class="container">
+            <div class="head">
+                <h2><a class="headingButton" href="login.html">Login</a></h2>
+            </div>
+            <form class="form" action="LoginServlet" method="post">
+                <div>
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="Enter email" required />
+                </div>
+                <br>
+                <div>
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Enter password" required />
+                </div>
+                <br>
+                <div>
+                    <input class="loginButton" type="submit" value="Login" />
+                </div>
+            </form>
+            <p class="ref">New User? <a class="aRef" href="register.html">Register</a></p>
+
+        </div>
+    </body>
+</html>
